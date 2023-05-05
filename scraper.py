@@ -44,7 +44,6 @@ for i in vns:
         body = f'Updated on {update_date}'
         open_link = {'activationType': 'protocol', 'arguments': url, 'content': 'Open Link'}
         try:
-            a = 1/0
             toast(heading,body,on_click=url,buttons=[open_link,'Dismiss'])
         except:
             print('-------------------------')
