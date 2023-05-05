@@ -40,7 +40,7 @@ for i in vns:
     dates[name]=update_date.strftime('%B %d, %Y')
 
     if(flag):
-        heading = f'New Update for {name}'
+        heading = f'New Update for {i}'
         body = f'Updated on {update_date}'
         open_link = {'activationType': 'protocol', 'arguments': url, 'content': 'Open Link'}
         try:
