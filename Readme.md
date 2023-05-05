@@ -5,6 +5,7 @@ A simple python script that scrapes [dik games](https://dikgames.com/) for lates
 ## Installation
 
 - Install the required modules.
+ 
     ```
     pip install -r requirements.txt
     ```
