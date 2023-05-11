@@ -11,6 +11,8 @@ with open('dates.json','r') as f:
     dates = json.load(f)
 
 for i in vns:
+	
+    print("Checking",i)
 
     name = i.lower().strip()
     name = name.split(' ')
@@ -40,7 +42,7 @@ for i in vns:
     dates[name]=update_date.strftime('%B %d, %Y')
 
     if(flag):
-        heading = f'New Update for {name}'
+        heading = f'New Update for {i}'
         body = f'Updated on {update_date}'
         open_link = {'activationType': 'protocol', 'arguments': url, 'content': 'Open Link'}
         try:
